@@ -1,0 +1,224 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jasper A Noche Jr Portfolio</title>
+    <style>
+        /* styles.css */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        header nav li {
+            margin: 0 10px;
+        }
+
+        header nav a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        header nav a:hover {
+            color: #ccc;
+        }
+
+       .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+       .profile-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+       .profile-pic {
+            width: 150px; /* resize profile picture */
+            height: 150px;
+            margin: 20px auto; /* center profile picture */
+        }
+
+       .carousel {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+       .carousel img {
+            width: 300px;
+            height: 250px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+       .carousel img:hover {
+            transform: scale(1.1);
+        }
+
+       .skills-strengths ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        /* Add this CSS to center the section headings */
+        section h2 {
+            text-align: center;
+        }
+
+        /* Add this CSS to center the contents under the About Me section */
+        #about.container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Add this CSS to center the copyright text inside the footer */
+        footer {
+            text-align: center;
+        }
+
+		#about {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		#about.profile-container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			padding: 20px;
+		}
+
+		#about.profile-pic {
+			width: 150px;
+			height: 150px;
+			margin: 20px auto;
+			border-radius: 50%;
+			object-fit: cover;
+		}
+
+		#about.profile-info {
+			text-align: center;
+		}
+
+		#about.about-text {
+			text-align: center;
+		}
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Main page.HTML">Home</a></li>
+                <li><a href="Classes.HTML">Classes</a></li>
+                <li><a href="Activity.HTML">Activities</a></li>
+                <li><a href="Contact.HTML">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Jasper A Noche Jr</h1>
+		<h2>Portfolio</h2>
+    </header>
+
+	<!-- About Me Section -->
+	<section id="about">
+		<h2>About me</h2>
+		<div class="container">
+			<div class="profile-container">
+				<div class="profile-info">
+					<img src="Profile.jpg" alt="Profile Image" class="profile-pic">
+					<h3>Jasper A Noche Jr</h3>
+					<p>Email: <a href="mailto:jjanoche@mymail.mapua.edu.ph">jjanoche@mymail.mapua.edu.ph</a></p>
+					<p>Personal Email: <a href="mailto:nochjaspernoche@gmail.com">nochjaspernoche@gmail.com</a></p>
+					<p>Degree Program in: Bachelor's and Master's in Information Technology</p>
+					<p class="about-text">I am Jasper A Noche Jr, a 20-year-old first-year student at Mapua University of Makati. I have a strong passion for technology and am eager to learn and contribute to the field of Information Technology.I am also interested in cybersecurity and data analytics and hope to specialize in these areas in the future.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+    <!-- Achievements Section -->
+    <section id="achievements">
+        <h2>Achievements</h2>
+        <div class="carousel">
+            <img src="DESC.jpg" alt="Achievement 1">
+            <img src="DME.jpg" alt="Achievement 2">
+            <img src="PDS.jpg" alt="Achievement 3">
+            <img src="PFE.jpg" alt="Achievement 4">
+        </div>
+    </section>
+
+	<!-- Skills and Strengths Section -->
+	<section id="skills-strengths">
+		<h2>Skills and Strengths</h2>
+		<div class="container">
+			<h3>My Skills:</h3>
+			<ul>
+				<li>Programming (Java, Python, C++)</li>
+				<li>Web Development (HTML, CSS, JavaScript)</li>
+				<li>Database Management (SQL)</li>
+				<li>Cybersecurity Fundamentals</li>
+				<li>Data Analysis and Visualization (Python))</li>
+			</ul>
+			<h3>My Strengths:</h3>
+			<ul>
+				<li>Problem-solving</li>
+				<li>Attention to detail</li>
+				<li>Quick learner</li>
+				<li>Teamwork and collaboration</li>
+				<li>Time management</li>
+			</ul>
+		</div>
+	</section>
+
+
+	<!-- Goals Section -->
+	<section id="goals">
+		<h2>Goals</h2>
+		<div class="container">
+			<h3>My Goals:</h3>
+			<ul>
+				<li>Enhance proficiency to deliver better outputs</li>
+				<li>Successfully graduate from Mapua University</li>
+				<li>Attain happiness and fulfillment, finding success in both what I have and what I pursue</li>
+			</ul>
+		</div>
+	</section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Jasper A Noche Jr</p>
+    </footer>
+
+    <script src="script.js"></script> <!-- link to external script -->
+</body>
+</html>

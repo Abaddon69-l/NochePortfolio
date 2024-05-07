@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activities</title>
+    <link rel="stylesheet" href="styles.css"> <!-- assuming you have a separate stylesheet -->
+	<style>
+	        /* styles.css */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        header nav li {
+            margin: 0 10px;
+        }
+
+        header nav a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        header nav a:hover {
+            color: #ccc;
+        }
+
+    .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+		    .carousel {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+    .carousel img {
+            width: 200px;
+            height: 150px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+    .carousel img:hover {
+            transform: scale(1.1);
+        }
+
+    .skills-strengths ul {
+            list-style: none;
+            padding: 0;
+        }
+
+       /* Add this CSS to center the section headings */
+       section h2 {
+            text-align: center;
+        }
+
+       /* Add this CSS to center the contents under the About Me section */
+       #about.container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+       /* Add this CSS to center the copyright text inside the footer */
+       footer {
+            text-align: center;
+        }
+		.activity-card {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin: 20px;
+		}
+
+		.activity-image {
+			width: 350x;
+			height: 300px;
+			object-fit: cover;
+			border-radius: 10px;
+			margin-bottom: 10px;
+		}
+
+		.activity-info {
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Main page.HTML">Home</a></li>
+                <li><a href="Classes.HTML">Classes</a></li>
+                <li><a href="Activity.HTML">Activities</a></li>
+                <li><a href="Contact.HTML">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Jasper A Noche Jr</h1>
+		<h2>Portfolio</h2>
+    </header>
+
+	<!-- Activities Section -->
+	<section id="activities">
+		<h2>Activities</h2>
+		<div class="container">
+			<div class="activity-card">
+				<img src="PUDS.jpg" alt="Activity 1" class="activity-image">
+				<div class="activity-info">
+					<h3>Foods</h3>
+					<p>I love eating, and especially going around the neighborhood or visiting a newly opened restaurant, and check out recommended restaurants by other people I know or from social media</p>
+				</div>
+			</div>
+			<div class="activity-card">
+				<img src="CG.jpg" alt="Activity 2" class="activity-image">
+				<div class="activity-info">
+					<h3>Gundpla</h3>
+					<p>I collect and build Gundpla not just for fun or for displaying but to compete with</p>
+				</div>
+			</div>
+			<div class="activity-card">
+				<img src="TGO.jpg" alt="Activity 3" class="activity-image">
+				<div class="activity-info">
+					<h3>Playing Tekken</h3>
+					<p>I casually play with friends, or bring chaos into rank matches</p>
+				</div>
+			</div>
+			<div class="activity-card">
+				<img src="GBWOT.jpg" alt="Activity 4" class="activity-image">
+				<div class="activity-info">
+					<h3>Gundpla Battle Tournaments</h3>
+					<p>Your Gubdpla having a second life by fighting in the battlefield and not just for display</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Jasper A Noche Jr</p>
+    </footer>
+
+    <script src="script.js"></script> <!-- link to external script -->
+</body>
+</html>

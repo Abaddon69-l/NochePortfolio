@@ -1,0 +1,204 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jasper A Noche Jr Portfolio</title>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav li {
+    margin: 0 10px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+header nav a:hover {
+    color: #ccc;
+}
+
+.content {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    text-align: center;
+}
+
+.classes-container {
+    position: relative;
+}
+
+.classes-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.classes-button:hover {
+    background-color: #444;
+}
+
+.classes-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.classes-dropdown ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.classes-dropdown li {
+    padding: 5px 10px;
+}
+
+.classes-dropdown li:hover {
+    background-color: #f2f2f2;
+}
+
+.classes-container:hover.classes-dropdown,
+.classes-button[aria-expanded="true"] +.classes-dropdown {
+    display: block;
+}
+        .classes-dropdown {
+            left: 0;
+            top: 100%;
+            width: 100%;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: absolute;
+            display: none;
+        }
+
+        .classes-dropdown ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .classes-dropdown li {
+            padding: 5px 10px;
+        }
+
+        .classes-dropdown li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+        }
+
+        .classes-dropdown li a:hover {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Main page.HTML">Home</a></li>
+                <li><a href="Classes.HTML">Classes</a></li>
+                <li><a href="Activity.HTML">Activities</a></li>
+                <li><a href="Contact.HTML">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Jasper A Noche Jr</h1>
+		<h2>Portfolio</h2>
+    </header>
+
+    <section class="content">
+        <h2>
+            <div class="classes-container">
+                <button class="classes-button" aria-expanded="false">Classes</button>
+                <div class="classes-dropdown">
+                    <ul>
+                        <li><a href="#">CSS121/L</a></li>
+                        <li><a href="#">ITS100L</a></li>
+                        <li><a href="#">CSS122/L</a></li>
+                        <li><a href="#">ISS120</a></li>
+                        <li><a href="#">ITS110L</a></li>
+                        <li><a href="#">ITS112</a></li>
+                        <li><a href="#">CSS121L</a></li>
+                        <li><a href="#">CSS131/L</a></li>
+                        <li><a href="#">CSS130</a></li>
+                        <li><a href="#">CSS150/L</a></li>
+                        <li><a href="#">CSS161L</a></li>
+                    </ul>
+                </div>
+            </div>
+        </h2>
+        <p>I am currently enrolled in various courses related to programming, information technology fundamentals, cybersecurity, web development, database management, data structures, systems analysis, and network fundamentals.</p>
+</section>
+	<section class="content">
+		<h2>Experience</h2>
+		<p>As a first-year student, my experience in the field is limited. However, I am eager to gain practical experience through internships, projects, and extracurricular activities.</p>
+	</section>
+	<section class="content">
+		<h2>Learnings</h2>
+		<p>My journey in information technology has just begun, and I am excited to absorb as much knowledge as possible. Currently, I am focusing on understanding programming fundamentals, web development, and database management. I am also exploring topics such as cybersecurity, data analysis, and software engineering to broaden my skill set.</p>
+	</section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Jasper A Noche Jr</p>
+    </footer>
+
+    <script>
+        const classesButton = document.querySelector('.classes-button');
+        const classesDropdown = document.querySelector('.classes-dropdown');
+
+        classesButton.addEventListener('click', () => {
+            classesDropdown.style.display = classesDropdown.style.display === 'none'? 'block' : 'none';
+            classesButton.setAttribute('aria-expanded', classesDropdown.style.display === 'block');
+        });
+    </script>
+</body>
+</html>
